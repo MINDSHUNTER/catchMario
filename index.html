@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <title>Click the Mario Game</title>
+</head>
+
+<body>
+    <main>
+        <div id="myModal">
+            <div id="myModalContent">
+                <p>Please select a level before starting the game and play.</p>
+            </div>
+        </div>
+
+        <div><button id="playButton" onclick="startGame()">Play</button></div>
+        <div class="game-container" id="gameContainer">
+            <img id="movingMario" src="/asset/photo/mario.png" alt="Moving Mario" onclick="handleClick()">
+            <div class="level-button" id="levelButton">
+                <button id="level1" onclick="selectLevel(1,this)">Level 1</button>
+                <button id="level2" onclick="selectLevel(2,this)">Level 2</button>
+                <button id="level3" onclick="selectLevel(3,this)">Level 3</button>
+            </div>
+
+            <div class="score" id="score">Score: 0</div>
+            <div class="timer" id="timer">Timer: 10</div>
+
+        </div>
+
+        <script src="/asset/javascript/js.js"></script>
+    </main>
+
+</body>
+
+</html>
